@@ -1,6 +1,6 @@
 # LineXpert - Automatización de Procesos de Ensamble para Vehículos Eléctricos
 
-## 📌 Descripción del Proyecto
+## Descripción del Proyecto
 
 **LineXpert** es una propuesta de solución de automatización para procesos de manufactura de vehículos eléctricos de dos ruedas (bicicletas, motos y patinetas). El objetivo del proyecto es optimizar líneas de producción a través del análisis de procesos, modelado del sistema de manufactura, evaluación económica y propuesta de celdas robotizadas.
 
@@ -8,7 +8,7 @@ Enlace del proyecto: [LineXpert GitHub Page](https://alejandrokno1.github.io/Lin
 
 ---
 
-## 👨‍💻 Integrantes
+## Integrantes
 
 - **Jhonathann Gómez** – jhagomezve@unal.edu.co  
 - **Julian Villalobos** – jlvillalobosj@unal.edu.co  
@@ -20,19 +20,19 @@ Semestre 2025-1
 
 ---
 
-## 🎯 Misión
+## Misión
 
 Ser una empresa líder en Latinoamérica en el diseño e implementación de soluciones de automatización de procesos de ensamble para vehículos eléctricos de dos ruedas, impulsando una movilidad urbana sostenible, innovadora, eficiente y accesible para todos.
 
 ---
 
-## 👁️ Visión
+##  Visión
 
 Diseñar e implementar procesos de ensamble para vehículos eléctricos innovadores, priorizando soluciones creativas y eficientes que aseguren altos estándares de calidad, sostenibilidad y rendimiento.
 
 ---
 
-## 📈 Objetivos
+## Objetivos
 
 - Diseñar y optimizar procesos productivos que aumenten la eficiencia operativa.
 - Medir la productividad y establecer planes de mejora continua en sistemas de producción.
@@ -40,7 +40,7 @@ Diseñar e implementar procesos de ensamble para vehículos eléctricos innovado
 
 ---
 
-## 🛵 Productos Analizados
+## Productos Analizados
 
 | Modelo        | Autonomía | Vel. Máx | Tiempo Carga | Peso | Carga Máx |
 |---------------|-----------|----------|---------------|------|-----------|
@@ -50,9 +50,9 @@ Diseñar e implementar procesos de ensamble para vehículos eléctricos innovado
 
 ---
 
-## 🗂 Gestión del Proyecto
+## Gestión del Proyecto
 
-### 🧩 Etapas del Ensamblaje General
+### Etapas del Ensamblaje General
 
 1. Preparación del chasis  
 2. Montaje del motor a la rueda trasera  
@@ -64,14 +64,14 @@ Diseñar e implementar procesos de ensamble para vehículos eléctricos innovado
 
 ---
 
-## 🤖 Gestión de Automatización
+## Gestión de Automatización
 
 - Diagnóstico de procesos con OEE < 40% (baja eficiencia).
 - Identificación de cuellos de botella en sistema eléctrico y montaje de motor.
 - Diseño de celdas robotizadas Pick & Place y atornillado.
 - Criterios de selección de robots, grippers y sistemas de seguridad.
 
-### 🛠 Proceso Actual vs Automatizado
+### Proceso Actual vs Automatizado
 
 | Producto         | OEE Actual | OEE Aut. | Mejora en Producción |
 |------------------|------------|----------|------------------------|
@@ -81,47 +81,47 @@ Diseñar e implementar procesos de ensamble para vehículos eléctricos innovado
 
 ---
 
-## 💰 Análisis Financiero
+## Análisis Financiero
 
-### 💸 Inversión Inicial
+### Inversión Inicial
 - Equipamiento industrial automatizado
 - Robótica industrial y estaciones de trabajo
 
-### 🛠 Gastos Operativos
+### Gastos Operativos
 - Mantenimiento preventivo/correctivo
 - Energía, repuestos y recursos humanos
 
-### 📊 Flujo de Operación
+### Flujo de Operación
 - Proyección de retorno sobre inversión (ROI)
 - Análisis de sensibilidad vs mejoras de producción
 
-### 🧑‍🔧 Valor como ingenieros (ACIEM)
+### Valor como ingenieros (ACIEM)
 - Cálculo basado en tarifas profesionales escalafonadas (categoría 7 y 8).
 
 ---
 
-## 🧱 Celda Robotizada Propuesta
+## Celda Robotizada Propuesta
 
-### 📦 Funcionalidad
+### Funcionalidad
 - Pick & Place: traslado del chasis a la banda
 - Ensamble automático del motor con control de torque
 
-### ✅ Valor Agregado
+### Valor Agregado
 - Reducción del tiempo de ciclo
 - Aumento de la precisión y calidad
 - Mejora en seguridad del operario
 
-### 🛡 Seguridad Funcional
+### Seguridad Funcional
 - Paros de emergencia
 - Mallas y sensores de presencia
 
-### 🤖 Efector Final
+### Efector Final
 - Garra neumática ajustable
 - Ventosas y sistema de atornillado
 
 ---
 
-## 📚 Bibliografía
+## Bibliografía
 
 - Módulos de clase de manufactura robotizada – UNAL 2025  
 - ABB, Motoman, Ripipsa, SMC – Catálogos industriales de robots y grippers  
@@ -130,7 +130,7 @@ Diseñar e implementar procesos de ensamble para vehículos eléctricos innovado
 
 ---
 
-## 📂 Enlaces Relevantes
+## Enlaces Relevantes
 
 - [Página GitHub del Proyecto](https://alejandrokno1.github.io/LineXpert/)
 - [Catálogo ABB](https://outerreeftech.com/collections/abb-industrial-robots)
