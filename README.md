@@ -77,38 +77,42 @@ Para realizar la gestion de el proyecto se definió la estructura del desglose d
 
 <img width="1741" height="913" alt="Gantt" src="https://github.com/user-attachments/assets/c2319751-b1ad-460a-bfa5-3cd234fe30d9" />
 
-En este se observa la 
+## Análisis de mercado
 
 ## Gestión de Automatización
 
-Se realizó el diagrama VSM del proceso para la moto ArtiX
+Se realizó el diagrama VSM del proceso para la moto AvantiX
 
-![VSM_AvantiX](https://github.com/user-attachments/assets/8ef9a46e-dc7e-4e75-8078-0f6b311b8cc9)
+<img width="784" height="436" alt="VSM_AvantiX" src="https://github.com/user-attachments/assets/b159c4f0-7bf9-499e-8624-4c2d886b8537" />
 
-En base a dicho diagrama se realizó la simulación en plant simulation de este proceso
-![PS_AvantiX](https://github.com/user-attachments/assets/ec6b64f4-a7c9-4e0f-a08c-b3351b9948c0)
+En base a dicho diagrama se realizó la simulación en plant simulation de este proceso:
+
+<img width="1018" height="275" alt="PS_AvantiX" src="https://github.com/user-attachments/assets/da21455b-c7a2-4a82-8109-cc7babc084ae" />
 
 Obteniendo el siguiente diagrama de uso de las estaciones
 
-![PS_AvantiX_stats](https://github.com/user-attachments/assets/91e46e23-9fb8-4c13-9b6c-69fa2365473b)
+<img width="1832" height="995" alt="PS_AvantiX_stats" src="https://github.com/user-attachments/assets/36a4a0c2-6c16-4b42-8ce5-ab8b6c656f95" />
+
+Se logra ver como se produce un claro cuello de botella en la estacionn de instalación del sistema eléctrico lo cuál genera un bloqueo de las estaciones anteriores a esta y unos elevados tiempos de espera de las estaciones posteriores.
 
 Con base a este análisis se identificaron los siguientes problemas:
 
-- Diagnóstico de procesos con OEE < 65% (baja eficiencia).
-- Identificación de cuellos de botella en sistema eléctrico y montaje de motor.
-- Diseño de celdas robotizadas Pick & Place y atornillado.
-- Criterios de selección de robots, grippers y sistemas de seguridad.
+- Identificación de cuellos de botella principalmente en la estación del sistema eléctrico debido a su tiempo elevado.
+- Hay estaciones cuyos procesos se realizan en serie los cuales pueden ser paralelizables.
 
-Se definió la automatizacion del proceso haciendo principalmente la paralelización de varios procesos obteniendo el siguiente VSM:
-![VSM_AvantiX_opt](https://github.com/user-attachments/assets/58fea508-120d-48d9-b60b-163b5021c63a)
+Se definió la automatizacion del proceso haciendo principalmente la paralelización de varios procesos obteniendo el siguiente VSM y también reduciendo el tiempo del sistema eléctrico por medio de la implementacion de  dos estaciones que hagan este travbajo. También se redujo el tiempo asociado a la estacion de transporte al hacer uso de una celda robótica:
+
+<img width="778" height="442" alt="VSM_AvantiX_opt" src="https://github.com/user-attachments/assets/23211c53-f2f4-4954-be49-c20de64120cd" />
 
 Implementando este VSM en plant simulation:
 
-![PS_AvantiX_opt](https://github.com/user-attachments/assets/154fbc3c-627e-4bd1-8169-6fe2daae30a0)
+<img width="861" height="342" alt="PS_AvantiX_opt" src="https://github.com/user-attachments/assets/e0c7b3c8-0c79-49c5-9250-861fb562bbdd" />
 
-De donde se obtuvo:
+De donde se obtuvieron las siguientes estadisticas por estación:
 
-![PS_AvantiX_opt_stats](https://github.com/user-attachments/assets/6e8ead5c-d56d-4a1d-b022-6aeb68d08110)
+<img width="1819" height="958" alt="PS_AvantiX_opt_stats" src="https://github.com/user-attachments/assets/c7800cce-5ebb-479f-bc60-fbab4f1fe03f" />
+
+Con esto se logra ver como se incrementa notablemente los tiempos en los que las estaciones están trabajando lo cuál tendrá el efecto correspondiente en los KPI de la línea.
 
 ### Proceso Actual vs Automatizado
 
@@ -116,22 +120,17 @@ Se pudo entonces determinar las siguientes comparaciones para observar la mejora
 
 | Producto         | Disponibilidad | Q   | Producción Actual (unds/día) | PE   | OEE    |
 | ---------------- | -------------- | --- | ---------------------------- | ---- | ------ |
-| Avanti X         | 0.94           | 0.8 | 22                           | 0.46 | 34.47% |
-| Wolf Artic       | 0.95           | 0.8 | 31                           | 0.52 | 39.27% |
-| Velocifero 2000w | 0.94           | 0.8 | 25                           | 0.52 | 39.17% |
+| Avanti X         | 0.94           | 0.8 | 8                            | 0.77 | 57.85% |
+| Wolf Artic       | 0.95           | 0.8 | 12                           | 0.81 | 61.66% |
+| Velocifero 2000w | 0.94           | 0.8 | 10                           | 0.85 | 64.27% |
 
-| Producto         | Disponibilidad | Q   | Producción Actual (unds/día) | PE   | OEE | Aumento Producción |
-| ---------------- | -------------- | --- | ---------------------------- | ---- | --- | ------------------ |
-| Avanti X         | 0.94           | 0.9 | 35                           | 0.73 | 62% | 59.1%              |
-| Wolf Artic       | 0.95           | 0.9 | 43                           | 0.72 | 61% | 38.7%              |
-| Velocifero 2000w | 0.94           | 0.9 | 33                           | 0.69 | 58% | 32%                |
+| Producto         | Disponibilidad | Q   | Producción Actual (unds/día) | PE   | OEE |
+| ---------------- | -------------- | --- | ---------------------------- | ---- | --- |
+| Avanti X         | 0.94           | 0.9 | 17                           | 0.87 | 74% |
+| Wolf Artic       | 0.95           | 0.9 | 19                           | 0.84 | 72% |
+| Velocifero 2000w | 0.94           | 0.9 | 19                           | 0.87 | 74% |
 
-| Producto         | OEE Actual | OEE Aut. | Mejora en Producción |
-| ---------------- | ---------- | -------- | -------------------- |
-| Avanti X         | 34.47%     | 59.1%    | +62%                 |
-| WOLF Artic       | 39.27%     | 61%      | +38.7%               |
-| Velocifero 2000W | 39.17%     | 58%      | +32%                 |
-
+En donde se muestra que la automatización propuesta incrementa tanto el unidades producidas por jornada, como el OEE general de la línea de ensamble.
 ---
 
 ## Análisis Financiero
