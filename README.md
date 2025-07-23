@@ -311,6 +311,8 @@ Para garantizar la vida útil de los equipos y el correcto funcionamiento de las
 
 ## Flujo de caja
 
+Con los valores para ingresos y costos obtenidos anteriormente se obtuvo el flujo de caja para los 5 primeros años de la inversión
+
 | Año | Ingresos           | Costos             | Inversión         | Flujo Neto         |
 |-----|--------------------|--------------------|--------------------|--------------------|
 | 0   | $0                 | $0                 | -$2.284.008.750   | -$2.284.008.750    |
@@ -319,6 +321,25 @@ Para garantizar la vida útil de los equipos y el correcto funcionamiento de las
 | 3   | $62.359.663.866    | -$61.186.443.576   | $0                | $1.235.652.119     |
 | 4   | $62.359.663.866    | -$61.186.443.576   | $0                | $2.408.872.408     |
 | 5   | $62.359.663.866    | -$61.186.443.576   | $0                | $3.582.092.698     |
+
+## Indicadores de inversión
+
+Del flujo de caja enterior podemos obtener la tasa interna de retorno y compararla con otras alternativas de inversión
+
+| Concepto          | Valor |
+|-------------------|-------|
+| TIR               | 21%   |
+| CDT               | 10%   |
+| FIC medio riesgo  | 13%   |
+| FIC alto riesgo   | 17%   |
+
+En donde se muestra que la tasa puede competir con estas alternativas de inversión incluso cuando se habla de fondos de inversión colectiva de mayor riesgo los cuales tienen asociadas mayores rentabildiades efectivas anuales. También se obtienen otros indicadores de la inversión como el VPN el cuál al ser positivo indica la favorabilidad de la inversión, y el payback de la inversión que es de 2 años por lo que la inversion se recupera rápidamente. Se tiene por último el ROI de 57% indicando nuevamente la favorabilidad de la inversión.
+
+| Indicador   | Valor                   |
+|-------------|--------------------------|
+| VPN         | $1.555.633.841,39        |
+| Payback     | 2                        |
+| ROI 5 años  | 57%                      |
 
 ---
 
