@@ -367,7 +367,13 @@ En donde se muestra que la tasa puede competir con estas alternativas de inversi
 - Ventosas y sistema de atornillado
 
 ---
+## Digital Factory / Controladores Industriales y SCADA
 
+El video explicativo realizado de toda esta sección se encuentra a continuación
+
+[![Miniatura del video](https://img.youtube.com/vi/7de41F2nmR0/0.jpg)](https://youtu.be/7de41F2nmR0)
+
+---
 ## Bibliografía
 
 - Módulos de clase de manufactura robotizada – UNAL 2025
@@ -378,7 +384,12 @@ En donde se muestra que la tasa puede competir con estas alternativas de inversi
 ---
 
 ## Enlaces Relevantes
+- [Página Web del Proyecto](https://jlvillalobosj.wixsite.com/linexpert2)
+  
+- [Página GitHub del Proyecto](https://github.com/jhonathann/APM)
+  
+- [Video en YouTube sección SCADA/PLC/Digital Factory](https://youtu.be/7de41F2nmR0)
 
-- [Página GitHub del Proyecto](https://alejandrokno1.github.io/LineXpert/)
+- [Video de la presentación final](https://www.youtube.com/watch?v=RsAYxRpVNy4)
 
----
+
