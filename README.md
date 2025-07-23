@@ -79,6 +79,24 @@ Para realizar la gestion de el proyecto se definió la estructura del desglose d
 
 ## Análisis de mercado
 
+Realizando una investigación de diferentes fuentes, se estimaron los valres de unidades vendidas para vehículos eléctricos de dos ruedas en Colombia para el año 2024 como se muuestra en la siguiente tabla:
+
+| Tipo de vehículo | Unidades estimadas | CAGR aprox | 10% mercado | Cantidad Mensual | Cantidad Diaria |
+|------------------|---------------------|------------|--------------|------------------|------------------|
+| Bicicletas       | 50.000              | 8,0%       | 5.000        | 417              | 21               |
+| Scooters         | 45.000              | 8,0%       | 4.500        | 375              | 19               |
+| Motos            | 30.000              | 8,0%       | 3.000        | 250              | 13               |
+
+Y basado en el valor de la tasa compuesta de crecimiento anual se realizó una estimación para el año 2030
+
+| Proyección | 10% mercado | Cantidad Mensual | Cantidad Diaria |
+|------------|-------------|------------------|------------------|
+| 79.344     | 7.934       | 661              | 33               |
+| 71.409     | 7.141       | 595              | 30               |
+| 47.606     | 4.761       | 397              | 20               |
+
+En donde se puede ver el número necesario de unidades de cada uno de los productos que se debe producir diariamente para lograr tener dicha participación en el mercado.
+
 ## Gestión de Automatización
 
 Se realizó el diagrama VSM del proceso para la moto AvantiX
@@ -134,38 +152,46 @@ En donde se muestra que la automatización propuesta incrementa tanto el unidade
 
 ---
 
-## Análisis Financiero
+# Análisis Financiero
 
 Basado en los elementos requeridos por la propuesta de la automatización, se realizó un estimao de la inversión inicial necesaria:
 
-# Presupuesto de adquisiciones (inversión inicial)
+## Presupuesto de adquisiciones (inversión inicial)
 
-| Ítem                                         | Cantidad | Costo Unitario (USD) | Costo Total (USD) | Costo Total (COP)   |
-| -------------------------------------------- | -------- | -------------------- | ----------------- | ------------------- |
-| Robot 1 Pick & Place                         | 1        | 27,057               | 27,057            | $111,420,726.00     |
-| Robot 2 Ensamblador                          | 1        | 32,000               | 32,000            | $131,776,000.00     |
-| Herramientas (grippers, sensores)            | 2        | 2,913                | 5,826             | $23,991,468.00      |
-| Banda transportadora                         | 1        | 7,000                | 7,000             | $28,826,000.00      |
-| Sistema neumático                            | 1        | 438                  | 438               | $1,803,684.00       |
-| Elementos de seguridad (cercas, indicadores) | 1        | 2,000                | 2,000             | $8,236,000.00       |
-| PLC, Sistema de Control                      | 1        | 8,139                | 8,139             | $33,516,402.00      |
-| Costos de instalación                        | -        | -                    | 2,000             | $8,236,000.00       |
-| **Total inversión inicial**                  | **8**    | **79,547**           | **84,460**        | **$347,806,280.00** |
+El cálculo de la inversión inicial se obtuvo teniendo en cuenta las 3 líneas de producción. Para los objetos a adquirir se tomaron a partir de su costo base, un costo adicional de seguro y transporte al país, constos arancelarios asumidos en 5% del valor del objeto, el IVA y otros diferentes costos logísticos lo como se muestra en la siguiente tabla:
 
-Se estimó también el consumo eléctrico utilizado por el brazo robótico y las bandas transportadoras
+| Item                    | Cantidad | Costo Base Unitario (USD) | Seguro y Transporte | Arancel (5%) | IVA     | Costos Logísticos | Costo Total Unitario (USD) | Costo Total (USD) | Costo Total (COP)     |
+|-------------------------|----------|----------------------------|----------------------|--------------|---------|--------------------|-----------------------------|--------------------|------------------------|
+| Robot                   | 3        | $27.500                    | $1.075               | $1.375       | $5.225  | $1.000             | $36.175                     | $108.525           | $488.362.500           |
+| Bandas Transportadoras  | 30       | $7.000                     | $460                 | $350         | $1.330  | $1.000             | $10.140                     | $304.200           | $1.368.900.000         |
+| Grippers                | 3        | $2.700                     | $331                 | $135         | $513    | $1.000             | $4.679                      | $14.037            | $63.166.500            |
+| Sensores                | 30       | $80                        | $252                 | $4           | $15     | $1.000             | $1.352                      | $40.548            | $182.466.000           |
+| PLC, Sistema de Control | 3        | $500                       | $265                 | $25          | $95     | $1.000             | $1.885                      | $5.655             | $25.447.500            |
+| Elementos de Seguridad  | 3        | $2.000                     | $310                 | $100         | $380    | $1.000             | $3.790                      | $11.370            | $51.165.000            |
+| Costos de instalación   | 3        | $5.000                     | -                    | -            | -       | $1.000             | $6.950                      | $20.850            | $93.825.000            |
+| Honorarios              | 1        | -                          | -                    | -            | -       | -                  | -                           | -                  | $10.676.250            |
+| **Total**               |          |                            |                      |              |         |                    |                             |                    | **$2.284.008.750**     |
 
-# Consumo eléctrico
+El cálculo de los honorarios se obtuvo a partir de la recomendación de la ACIEM en su manual de tarifas de referencias en ingeniería como se muestra a continuación:
 
-|                      | kw-Hora | kw-Día   | kw-Mes  | Precio unitario | Cantidad Maquinaria | Gasto mensual COP |
-| -------------------- | ------- | -------- | ------- | --------------- | ------------------- | ----------------- |
-| Energía eléctrica    | 288 COP | 2304 COP | 46080   |                 |                     |                   |
-| Brazo robótico       | $0.80   | $6.40    | $128.00 | $5,898,240.00   | 2                   | $11,796,480.00    |
-| Banda Transportadora | 0.5     | 4        | 80      | $3,686,400.00   | 3                   | $11,059,200.00    |
-| Herramientas         | 1       | 8        | 160     | $7,372,800.00   | 5                   | $36,864,000.00    |
-| **Total mensual**    | 2.3     | 18.4     | 46448   | 16957440        | 10                  | $59,719,680.00    |
-| **Total anual**      | 27.6    | 220.8    | 557376  | 203489280       | 120                 | $716,636,160.00   |
+| Escalafón | SMMLV | Horas/mes | Total (COP) | Total/h (COP) |
+|-----------|-------|-----------|--------------|----------------|
+| 7         | 5     | 160       | $7,117,500   | $44,484        |
 
-Esto conlleva los siguientes costos anuales
+| Cantidad | Costo/hora | Horas Totales | Total cant | Total       |
+|----------|------------|----------------|-------------|-------------|
+| 3        | $44.484    | 80             | $3.558.750  | $10.676.250 |
+
+## Ingresos
+
+Basado en las ventas anuales estimadas se estimaron los ingresos anuales brutos, y netos después de impuestos.
+
+| Modelo           | Precio Unidad       | Producción Diaria | Cantidad Mensual | Cantidad Anual | Ingreso Anual Bruto   | Ingreso Anual Neto     |
+|------------------|---------------------|-------------------|------------------|----------------|-----------------------|------------------------|
+| Avanti X         | $6.000.000,00       | 17                | 340              | 4.080          | $24.480.000.000       | $20.571.428.571        |
+| Wolf Artic       | $3.800.000,00       | 19                | 380              | 4.560          | $17.328.000.000       | $14.561.344.538        |
+| Velocífero 2000  | $7.500.000,00       | 18                | 360              | 4.320          | $32.400.000.000       | $27.226.890.756        |
+| **Total Anual**  |                     |                   |                  | **12.960**     | **$74.208.000.000**   | **$62.359.663.866**    |
 
 # Costos operativos anuales
 
