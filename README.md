@@ -73,23 +73,11 @@ Diseñar e implementar procesos de ensamble para vehículos eléctricos innovado
 
 ## Gestión del Proyecto
 
-Para realizar la gestion de el proyecto se definió la estructura del desglose de trabajo y el diagrama de gant del proyecto como se muestra en la siguiente figura:
+Para realizar la gestion de el proyecto se definió la estructura del desglose de trabajo y el diagrama de gaant del proyecto como se muestra en la siguiente figura:
 
-![Gant](https://github.com/user-attachments/assets/f1ccfc06-13b4-4d6e-9c65-ce56424b5c93)
+<img width="1741" height="913" alt="Gantt" src="https://github.com/user-attachments/assets/c2319751-b1ad-460a-bfa5-3cd234fe30d9" />
 
-### Etapas del Ensamblaje General
-
-De acuerdo a la investigación estas son, en general, las etapas de ensamblaje de los productos
-
-1. Preparación del chasis
-2. Montaje del motor a la rueda trasera
-3. Montaje de ruedas y frenos al chasis
-4. Montaje del manubrio y periféricos
-5. Instalación eléctrica y cableado
-6. Montaje de luces, sillín y accesorios
-7. Pruebas de verificación
-
----
+En este se observa la 
 
 ## Gestión de Automatización
 
@@ -106,7 +94,7 @@ Obteniendo el siguiente diagrama de uso de las estaciones
 
 Con base a este análisis se identificaron los siguientes problemas:
 
-- Diagnóstico de procesos con OEE < 40% (baja eficiencia).
+- Diagnóstico de procesos con OEE < 65% (baja eficiencia).
 - Identificación de cuellos de botella en sistema eléctrico y montaje de motor.
 - Diseño de celdas robotizadas Pick & Place y atornillado.
 - Criterios de selección de robots, grippers y sistemas de seguridad.
