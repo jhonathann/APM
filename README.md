@@ -381,14 +381,6 @@ El video explicativo realizado de toda esta sección se encuentra a continuació
 [![Miniatura del video](https://img.youtube.com/vi/7de41F2nmR0/0.jpg)](https://youtu.be/7de41F2nmR0)
 
 ---
-## Bibliografía
-
-- Módulos de clase de manufactura robotizada – UNAL 2025
-- ABB, Motoman, Ripipsa, SMC – Catálogos industriales de robots y grippers
-- Manual ACIEM de tarifas 2015
-- Noticias del mercado energético y movilidad eléctrica en Colombia
-
----
 
 ## Enlaces Relevantes
 - [Página Web del Proyecto](https://jlvillalobosj.wixsite.com/linexpert2)
