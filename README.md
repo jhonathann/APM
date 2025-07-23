@@ -193,27 +193,132 @@ Basado en las ventas anuales estimadas se estimaron los ingresos anuales brutos,
 | Velocífero 2000  | $7.500.000,00       | 18                | 360              | 4.320          | $32.400.000.000       | $27.226.890.756        |
 | **Total Anual**  |                     |                   |                  | **12.960**     | **$74.208.000.000**   | **$62.359.663.866**    |
 
-# Costos operativos anuales
+## Costos operativos anuales
 
-| Concepto                         | Monto Anual (COP)     |
-| -------------------------------- | --------------------- |
-| Energía eléctrica                | $716,636,160.00       |
-| Sueldos operarios (10 operarios) | $341,640,000.00       |
-| Mantenimiento robots             | $2,500,000.00         |
-| Insumos                          | $2,500,000,000.00     |
-| Transporte                       | $20,000,000.00        |
-| **Total operativo**              | **$3,580,776,160.00** |
+Los costos operativos anuales se describen en la siguiente tabla, en dónde se consideraron los Insumos necesarios para ensamblar cada parte, La energía eléctrica consumida por el sistema, Los salarios de los operarios y el mantenimiento preventivo general.
 
-Por último se realizó el analisis del flujo de caja para la implementación general del proyecto de donde se observa que tan solo en 1 año se podrían ver utilizades sobre la inversion
+| Rubro               | Costo Anual (COP)     |
+|---------------------|------------------------|
+| Insumos             | $59.230.800.000        |
+| Energía Eléctrica   | $27.720.000            |
+| Salarios Operarios  | $1.798.548.576         |
+| Mantenimientos      | $129.375.000           |
+| **Total**           | **$61.186.443.576**    |
 
-# Flujo de caja (basado en 700 unidades por més a 7.000.000 por unidad)
 
-| Año | Ingreso (COP)      | Costos operativos (COP) | Inversión (COP)  | Flujo neto (COP)    |
-| --- | ------------------ | ----------------------- | ---------------- | ------------------- |
-| 0   | 0                  | 0                       | -$323,921,880.00 | -$323,921,880.00    |
-| 1   | $58,800,000,000.00 | -$3,580,776,160.00      | -$323,921,880.00 | $54,571,380,080.00  |
-| 2   | $58,800,000,000.00 | -$3,580,776,160.00      | $0.00            | $109,790,603,920.00 |
-| 3   | $58,800,000,000.00 | -$3,580,776,160.00      | $0.00            | $165,009,827,760.00 |
+### Insumos
+
+Se realizó un estimado de los insumos necesario para el ensamble de cada uno de los productos
+
+#### AvantiX
+
+| Material     | Precio (COP) |
+|--------------|--------------|
+| Chasis       | $500.000     |
+| Motor        | $1.000.000   |
+| Batería      | $800.000     |
+| Circuitería  | $400.000     |
+| Ruedas       | $500.000     |
+| Suspensión   | $300.000     |
+| Frenos       | $400.000     |
+| Manubrio     | $400.000     |
+| Luces        | $200.000     |
+| Sillín       | $150.000     |
+| Accesorios   | $200.000     |
+| **Total**    | **$4.850.000** |
+
+#### Wolf Artic
+
+| Material     | Precio (COP) |
+|--------------|--------------|
+| Cuadro       | $300.000     |
+| Motor        | $600.000     |
+| Batería      | $400.000     |
+| Circuitería  | $300.000     |
+| Ruedas       | $400.000     |
+| Pedaleo      | $200.000     |
+| Frenos       | $300.000     |
+| Manubrio     | $200.000     |
+| Luces        | $150.000     |
+| Sillín       | $180.000     |
+| Accesorios   | $125.000     |
+| **Total**    | **$3.155.000** |
+
+####
+
+| Material     | Precio (COP) |
+|--------------|--------------|
+| Chasis       | $600.000     |
+| Motor        | $1.100.000   |
+| Batería      | $1.000.000   |
+| Circuitería  | $400.000     |
+| Ruedas       | $800.000     |
+| Suspensión   | $300.000     |
+| Frenos       | $400.000     |
+| Manubrio     | $500.000     |
+| Luces        | $300.000     |
+| Sillín       | $200.000     |
+| Accesorios   | $300.000     |
+| **Total**    | **$5.800.000** |
+
+#### Total
+
+Basado  en estos estimados se tiene el costo de insumos Anual estimado
+
+| Modelo           | Cantidad Producida | Costo Anual (COP)     |
+|------------------|--------------------|------------------------|
+| Avanti X         | 4.080              | $19.788.000.000        |
+| Wolf Artic       | 4.560              | $14.386.800.000        |
+| Velocífero       | 4.320              | $25.056.000.000        |
+| **Total**        | **12.960**         | **$59.230.800.000**    |
+
+### Energia Eléctrica
+
+Se realizó un estimado de la energía eléctrica consumida comose muestra en la siguiente tabla asumiento un costo de kWh de 308 pesos:
+
+| Máquina                | Cantidad | Consumo/Día unidad (kWh) | Consumo Total/Día (kWh) | Consumo Mensual | Consumo Anual | Costo Anual (COP) |
+|------------------------|----------|---------------------------|--------------------------|------------------|----------------|--------------------|
+| Robot ABB              | 3        | 40                        | 120                      | 2400             | 28800          | $8.870.400         |
+| Bandas Transportadoras | 30       | 8                         | 240                      | 4800             | 57600          | $17.740.800        |
+| Adicional              | 3        | 5                         | 15                       | 300              | 3600           | $1.108.800         |
+| **Total**              |          |                           |                          |                  |                | **$27.720.000**    |
+
+### Salario Operarios
+
+Basado en su rol se fijo un salio para los operarios involucrados que van de 2 a 3 SMMLV
+
+| Rol        | Cantidad Trabajadores | SMMLV | Costo Mensual     | Costo Anual         |
+|------------|------------------------|-------|--------------------|----------------------|
+| Operario   | 28                     | 2     | $135.374.624       | $1.624.495.488       |
+| Supervisor | 2                      | 3     | $14.504.424        | $174.053.088         |
+| **Total**  |                        |       |                    | **$1.798.548.576**   |
+
+
+### Mantenimientos Preventivos
+
+Para garantizar la vida útil de los equipos y el correcto funcionamiento de las líneas de producción se estimaron los costos de los mantenimientos preventivos de los equipos
+
+| Ítem                 | Cantidad | Costo Anual Unitario (USD) | Costo Anual (USD) | Costo Anual (COP)    |
+|----------------------|----------|-----------------------------|-------------------|-----------------------|
+| Robots               | 3        | $2,500                      | $7,500            | $33,750,000           |
+| Banda Transportadora | 30       | $600                        | $18,000           | $81,000,000           |
+| Gripper              | 3        | $150                        | $450              | $2,025,000            |
+| Sensor               | 30       | $30                         | $900              | $4,050,000            |
+| PLC                  | 3        | $300                        | $900              | $4,050,000            |
+| Otros                | 1        | $1,000                      | $1,000            | $4,500,000            |
+| **Total**            |          |                             |                   | **$129,375,000**      |
+
+
+## Flujo de caja
+
+| Año | Ingresos           | Costos             | Inversión         | Flujo Neto         |
+|-----|--------------------|--------------------|--------------------|--------------------|
+| 0   | $0                 | $0                 | -$2.284.008.750   | -$2.284.008.750    |
+| 1   | $62.359.663.866    | -$61.186.443.576   | $0                | -$1.110.788.460    |
+| 2   | $62.359.663.866    | -$61.186.443.576   | $0                | $62.431.829        |
+| 3   | $62.359.663.866    | -$61.186.443.576   | $0                | $1.235.652.119     |
+| 4   | $62.359.663.866    | -$61.186.443.576   | $0                | $2.408.872.408     |
+| 5   | $62.359.663.866    | -$61.186.443.576   | $0                | $3.582.092.698     |
 
 ---
 
@@ -254,8 +359,5 @@ Por último se realizó el analisis del flujo de caja para la implementación ge
 ## Enlaces Relevantes
 
 - [Página GitHub del Proyecto](https://alejandrokno1.github.io/LineXpert/)
-- [Catálogo ABB](https://outerreeftech.com/collections/abb-industrial-robots)
-- [Grippers para robots – Ripipsa](https://ripipsa.com/grippers-robot/)
-- [SMC Grippers PDF](https://static.smc.eu/pdf/Grippers%20for%20Collaborative%20Robots_EU.pdf)
 
 ---
