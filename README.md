@@ -131,6 +131,7 @@ Se pudo entonces determinar las siguientes comparaciones para observar la mejora
 | Velocifero 2000w | 0.94           | 0.9 | 19                           | 0.87 | 74% |
 
 En donde se muestra que la automatización propuesta incrementa tanto el unidades producidas por jornada, como el OEE general de la línea de ensamble.
+
 ---
 
 ## Análisis Financiero
